@@ -1,0 +1,11 @@
+python3 run_abl_uot.py \
+  --model colqwen2_5 \
+  --data_dir data \
+  --datasets arxivqa \
+  --mfs 5 10 25 50  \
+  --ablation_type 5 \
+  --device 'cpu' \
+  --gamma 0.04 \
+  --rho 5.0 \
+  --n_iter 20 \
+  --sinkhorn_iter 3
